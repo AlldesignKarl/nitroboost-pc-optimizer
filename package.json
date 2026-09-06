@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -p tsconfig.json && tsc -p electron/tsconfig.json && vite build",
-    "build:win": "npm run build && electron-builder --win",
+    "build:win": "npm run build && electron-builder --win --publish never",
     "preview": "vite preview",
     "electron:dev": "npm run build:electron && concurrently -k \"vite\" \"wait-on tcp:5173 && cross-env NODE_ENV=development electron .\"",
     "build:electron": "tsc -p electron/tsconfig.json",
@@ -46,6 +46,7 @@
   "build": {
     "appId": "com.alldesignkarl.nitroboost",
     "productName": "NitroBoost",
+    "publish": null,
     "files": [
       "dist/**/*",
       "dist-electron/**/*"
