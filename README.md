@@ -80,7 +80,7 @@ terminal como Administrador antes de ejecutar `npm run electron:dev`.
 npm run build:win
 ```
 
-Genera un instalador NSIS en `release/`. Debe compilarse **en Windows** (o en
+Genera un instalador NSIS en `dist/`. Debe compilarse **en Windows** (o en
 CI con un runner Windows); no se puede generar el `.exe` final desde Linux/macOS
 con esta configuración.
 

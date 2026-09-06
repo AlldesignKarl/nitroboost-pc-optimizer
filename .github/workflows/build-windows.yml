@@ -22,5 +22,5 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: NitroBoost-installer
-          path: release/*.exe
+          path: dist/*.exe
           if-no-files-found: error
